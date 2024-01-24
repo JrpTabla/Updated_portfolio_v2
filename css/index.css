@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-position: 20%;
+  background-repeat: no-repeat;
+}
+
+.body-background-image {
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+  background-size: auto;
+  background-position: center;
+  height: 100%;
+  background-image: url(../images/star.png);
+  transition: background-color 1s;
+}
+
+.navbar-max {
+  background-color: transparent !important;
+}
+
+.navbar-link {
+  color: white;
+  /* color: white; */
+  font-family: "Dongle";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 25px;
+  transition: color 0.5s ease-in-out;
+}
+
+.logo {
+  color: white;
+  /* color: white; */
+  font-family: "Dongle";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 35px;
+  transition: color 0.5s ease-in-out;
+}
+
+.logo:hover {
+  color: white;
+}
+
+/* Change color on hover */
+.navbar-link:hover {
+  color: white;
+}
+
+/* Custom background color for screens wider than 762px */
+.semi-transparent-white-bg {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: white;
+  font-family: "Dongle";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 25px;
+  border-radius: 32px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.semi-transparent-white-bg:hover {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.body-landView {
+  min-height: 100vh;
+  align-items: center;
+}
+
+.body-content {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .Landing_view {
+    max-width: 900px;
+}
+ */
+.Landing_view h1,
+.About_view h1 {
+  font-family: "Dongle";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 120px;
+  color: white;
+}
+
+.Landing_view p,
+.About_view p {
+  font-family: "Dongle";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  color: #bdbdc0;
+  /* color: white; */
+}
+
+.icon-social_media {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  cursor: pointer;
+}
+
+.nav-float {
+  position: fixed;
+  top: -10%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-link-div {
+  backdrop-filter: blur(16px);
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 32px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+svg {
+  background-color: transparent;
+  color: white;
+  transition: 0.5s ease-in;
+}
+
+svg:hover {
+  transition: 0.5s ease-in-out;
+  scale: 1.5;
+}
+
+.About-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Project-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title-box {
+  width: 10px;
+  height: 26px;
+  background-color: #1d1c20;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.light-switch {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 32px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.light-switch .off {
+  display: none;
+}

@@ -1,0 +1,124 @@
+.card {
+    max-height: 400px;
+    min-height: 550px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.card-phone {
+    max-height: 400px;
+    min-height: 600px;
+    background-color: #1d1c20;
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    /* Add a shadow with appropriate values */
+}
+
+.phone-island {
+    height: 25px;
+    width: 100px;
+    border-radius: 12px;
+}
+
+h2 {
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: white;
+}
+
+.card p,
+.card-project p {
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #bdbdc0;
+
+}
+
+.phone-Category {
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.Category-title,
+.Category-title-2,
+.Category-title-3 {
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    color: white;
+}
+
+.Category-Name,
+.Category-Content,
+.Category-Star,
+.Category-Name-2,
+.Category-Content-2,
+.Category-Star-2,
+.Category-Name-3,
+.Category-Content-3,
+.Category-Star-3 {
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #bdbdc0;
+}
+
+.Category-price,
+.Category-price-2,
+.Category-price-3 {
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: white;
+}
+
+.Category-items:hover {
+    transition: color 0.3s ease-in-out;
+    color: white;
+}
+
+.Category-items.selected {
+    color: white;
+    border-bottom: 1px solid;
+}
+
+.phone-picture img {
+    border-radius: 10%;
+}
+
+.Category-box {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    /* Enable vertical scrolling when content overflows */
+    max-height: 290px;
+    /* Set the maximum height as per your design */
+
+}

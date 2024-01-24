@@ -1,0 +1,185 @@
+.color-coding {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.color-icon {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    /* Add a shadow with appropriate values */
+    transition: color 0.5s ease-in;
+    backdrop-filter: blur(16px);
+    background-color: rgba(255, 255, 255, .08);
+    border: 1px solid rgba(255, 255, 255, .08);
+}
+
+
+.card-tab {
+    max-height: 400px;
+    min-height: 600px;
+    background-color: #1d1c20;
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    /* Add a shadow with appropriate values */
+}
+
+.card-tab-Name {
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #bdbdc0;
+}
+
+.card-tab-header-logo {
+    display: flex;
+}
+
+.card-tab-header {
+    border: 1px solid rgba(255, 255, 255, .08);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.card-tab-header-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.card-tab-Name.selected {
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: white;
+}
+
+.card-tab-color-container:hover {
+    background-color: rgba(255, 255, 255, .08);
+
+}
+
+.icon-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.color-icon:hover {
+    transition: 0.5s ease-in-out;
+    /* border: 1px solid; */
+    border-radius: 10px;
+}
+
+
+#twitter.selected {
+    border-color: rgb(28, 155, 240);
+    background-color: rgb(28, 155, 240);
+    /* border: 1px solid; */
+    border-radius: 10px;
+}
+
+#netflix.selected {
+    border-color: rgb(229, 9, 20);
+    background-color: rgb(229, 9, 20);
+    /* border: 1px solid; */
+    border-radius: 10px;
+}
+
+#reddit.selected {
+    border-color: rgb(255, 69, 0);
+    background-color: rgb(255, 69, 0);
+    /* border: 1px solid; */
+    border-radius: 10px;
+}
+
+#snapchat.selected {
+    border-color: rgb(255, 252, 1);
+    background-color: rgb(255, 252, 1);
+    /* border: 1px solid; */
+    border-radius: 10px;
+}
+
+#meta.selected {
+    border-color: rgb(1, 101, 225);
+    background-color: rgb(1, 101, 225);
+    /* border: 1px solid; */
+    border-radius: 10px;
+}
+
+#cashapp.selected {
+    border-color: rgb(0, 62, 41);
+    background-color: rgb(0, 62, 41);
+    /* border: 1px solid; */
+    border-radius: 10px;
+}
+
+
+#twitter:hover {
+    border-color: rgb(28, 155, 240);
+    background-color: rgb(28, 155, 240);
+}
+
+#netflix:hover {
+    border-color: rgb(229, 9, 20);
+    background-color: rgb(229, 9, 20);
+}
+
+#reddit:hover {
+    border-color: rgb(255, 69, 0);
+    background-color: rgb(255, 69, 0);
+}
+
+#snapchat:hover {
+    border-color: rgb(255, 252, 1);
+    background-color: rgb(255, 252, 1);
+}
+
+#meta:hover {
+    border-color: rgb(1, 101, 225);
+    background-color: rgb(1, 101, 225);
+}
+
+#cashapp:hover {
+    border-color: rgb(0, 62, 41);
+    background-color: rgb(0, 62, 41);
+}
+
+.circle-1 {
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    background-color: #7762f6;
+}
+
+.circle-2 {
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    background-color: #1cc47d;
+}
+
+.circle-3 {
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    background-color: #f24822;
+}
+
+.circle-4 {
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    background-color: #ffda1c;
+}

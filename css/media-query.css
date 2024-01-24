@@ -1,0 +1,66 @@
+/* Media query for screens less than 762px */
+@media (max-width: 761px) {
+
+    .navbar-max {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        z-index: 10; /* Ensure it's above other content */
+        
+    }
+
+    nav .container {
+       /* Change background color for smaller screens */
+       background-color: #1d1c20 !important;
+       border: 1px solid rgba(255, 255, 255, 0.08) !important;
+       border-radius: 32px;
+       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .logo {
+    color: white;
+    }
+
+    /* Custom background color for screens wider than 762px */
+    .semi-transparent-white-bg {
+        background-color: rgba(255, 255, 255, 0.08) !important;
+        border: 1px solid rgba(255, 255, 255, 0);
+        color: white;
+    }
+
+    .logo span {
+        display: none;
+    }
+
+    .Landing_view h1,
+    .About_view h1 {
+        font-family: 'Dongle';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px !important;
+        line-height: 60px !important;
+        color: white;
+    
+    }
+
+    .Landing_view p,
+    .About_view p {
+        font-family: 'Dongle';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px !important;
+        line-height: 25px !important;
+        color: #bdbdc0;
+    }
+
+    .navbar-max-float {
+        display: none;
+    }
+
+
+    .nav-float {
+        display: none;
+    }
+}
+
+

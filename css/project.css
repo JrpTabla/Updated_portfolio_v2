@@ -1,0 +1,194 @@
+.Project1 {
+    /* background-color: white; */
+    background-image: url("./images/portfolio.PNG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+} 
+
+.Project-framework {
+    /* background-color: white; */
+
+    min-height: 350px;
+    max-height: 350px;
+    
+} 
+.project-icon {
+    min-height: 300px;
+    min-width: 300px;
+}
+
+#css-icon {
+    transform: translate3d(0px, 0px, 0px) scale3d(0.7, 0.7, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    transition: 0.5s ease-in;
+    background-color: #51cdff;
+    border-radius: 25% 25% 25% 25%;
+}
+
+
+.Project-framework:hover #html-icon {
+    transform: translate3d(-16px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    transition: 0.5s ease-in-out;
+    background-color: #ff6831;
+    border-radius: 100% 100% 100% 100%;
+    box-shadow: 0 2px 50px rgba(250,76,47,.71), 0 4px 12px 8px #000;
+}
+.Project-framework:hover  #css-icon{
+    transform: translate3d(16px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    transition: 0.5s ease-in-out;
+    background-color: #51cdff;
+    border-radius: 100% 100% 100% 100%;
+    box-shadow: 0 2px 11px rgba(0,0,0,.56), 0 3px 40px rgba(0,147,206,.56), inset -1px -4px 14px #2656ff;
+
+}
+
+#html-icon {
+    transform: translate3d(0px, 0px, 0px) scale3d(0.7, 0.7, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    transition: 0.5s ease-in;
+    background-color: #ff6831;
+    border-radius: 25% 25% 25% 25%;
+}
+
+/* #html-icon:hover {
+    transform: translate3d(16px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    transition: 0.5s ease-in-out;
+} */
+
+.card-project {
+    max-height: 400px;
+    min-height: 550px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 426px) {
+    .portfolio-pc {
+        display: none;
+    }
+}
+
+
+
+.back-end-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 420px;
+}
+
+.back-end-card {
+    position: relative;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+
+}
+
+.back-end-img {
+    display: flex;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 10px;
+    left: 10px;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    /* backdrop-filter: blur(20px); */
+    background: #1d1c20;
+    z-index: 3;
+    justify-content:end;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+   transition: 0.3s ;
+}
+
+.back-end-card:hover .back-end-img {
+    height: 50%;
+    width: 50%;
+    left: -45px;
+    top: 55px;
+}
+
+@media (max-width: 761px) {
+
+    .back-end-card:hover .back-end-img {
+        left: -85px;
+
+    }
+
+}
+
+@media (max-width: 378px) {
+    .back-end-container {
+   
+    max-height: 360px;
+    }
+
+}
+
+@media (max-width: 321px) {
+    .back-end-card:hover .back-end-img {
+        left: -85px;
+        top: 40px;
+    }
+
+}
+
+.card-tool ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.card-tool ul li {
+    position: relative;
+    list-style: none;
+}
+.card-tool ul li a {
+    position: relative;
+    font-size: 4rem;
+    line-height: 1em;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, .5);
+}
+.card-tool ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 8px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+.card-tool ul li a:hover::before {
+    width: 100%;
+    -webkit-text-stroke: 1px var(--clr);
+    filter: drop-shadow(0 0 25px var(--clr));
+}

@@ -1,0 +1,117 @@
+
+/* Floating Navabar */
+.translateDown-Floating{
+    animation:slideDown 1s ease-in-out 0s 1 forwards;
+}
+
+.translateUP-Floating {
+    animation: slideUp 1s ease-in-out 0s 1 forwards;
+}
+
+
+@keyframes slideDown{
+    from{
+        opacity: 0;
+        transform: translate(0,0);
+        filter:blur(33px);
+    }to{
+        opacity: 1;
+        transform: translate(0,97px);
+        filter:blur(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 1;
+        transform: translate(0, 97px);
+        filter: blur(0);
+    }
+    to {
+        opacity: 0;
+        transform: translate(0, 0);
+        filter: blur(33px);
+    }
+}
+/* End Floating Navabar */
+
+
+/* Frameworks Animation */
+.disappear-animation-1 {
+    animation: disappear 1s 3s forwards;
+}
+
+.disappear-animation-2 {
+    animation: disappear 1s 4s forwards;
+}
+                        
+.disappear-animation-3 {
+    animation: disappear 1s 5s forwards;
+}
+
+.resize-translate-animation {
+    animation: resizeTranslate 1s 6s forwards, translateLeft 1s 7s forwards;
+}
+
+.resize-translate-animation-only {
+    animation: resizeTranslate 1s 6s forwards;
+}
+
+.translateY-animation-only {
+    animation: translatebottom 1s 6s forwards;
+}
+
+.translateY-animation-only-2 {
+    animation: translatebottom 1s 6s forwards;
+}
+
+.translateX-animation-square-2 {
+    animation: translateSquare-2 3s 1s forwards;
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes translateSquare-2 {
+    0% {
+        transform: translateX(0); /* Initial size */
+    }
+    100% {
+        transform: translateX(275px) ; /* Final size (adjust as needed) */
+    }
+}
+
+@keyframes resizeTranslate {
+    0% {
+        transform: scale(1); /* Initial size */
+    }
+    100% {
+        transform: scale(1.25) translateX(10px) translateY(5px); /* Final size (adjust as needed) */
+    }
+}
+
+@keyframes translateLeft {
+    0% {
+        transform: translateX(0) scale(1.25); /* Initial position */
+    }
+    100% {
+            transform: translateX(125px) scale(1.25) translateY(5px); /* Translate left by 100px (adjust as needed) and maintain the final size */
+    }
+}
+
+@keyframes translatebottom {
+    0% {
+        transform: translateY(0); /* Initial position */
+    }
+    100% {
+        transform: translateY(20px); /* Translate left by 100px (adjust as needed) and maintain the final size */
+    }
+}
+
+/* End Frameworks Animation */
