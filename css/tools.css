@@ -21,17 +21,17 @@
     /* box-shadow: 0 15px 50px rgba(0,0,0,0.1); */
 }
 
-.framework-card img{
+.framework-card img {
     opacity: 0;
-}  
+}
 
-.card-tool:hover .framework-card{
+.card-tool:hover .framework-card {
     transform: rotate(calc(var(--i) * 5deg)) translate(calc(var(--i) * 80px), -50px);
     /* color: rgba(225,225,225,1); */
-    box-shadow: 0 15px 50px rgba(0,0,0,0.25);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
     background: #1d1c20;
 
-    
+
 }
 
 .card-tool:hover .framework-card img {
@@ -47,73 +47,73 @@
 .framework-card:hover {
     translate: calc(var(--i) * 5px) -50px;
     z-index: 100;
-    background: #5e5cf5 !important; 
-    
-} 
+    background: #5e5cf5 !important;
+
+}
 
 
-@media (min-width: 1024px) and (max-width:  1280px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
     .framework-card {
         width: 200px;
         height: 320px;
     }
 
-    .card-tool:hover .framework-card{
-    transform: rotate(calc(var(--i) * 5deg)) translate(calc(var(--i) * 35px), -50px);
-    /* color: rgba(225,225,225,1); */
-    color: rgba(255, 255, 255, 1);
-    box-shadow: 0 15px 50px rgba(0,0,0,0.25);
-    
+    .card-tool:hover .framework-card {
+        transform: rotate(calc(var(--i) * 5deg)) translate(calc(var(--i) * 35px), -50px);
+        /* color: rgba(225,225,225,1); */
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+
     }
 }
 
 
-@media (min-width:  769px) and (max-width:  1023px) {
+@media (min-width: 769px) and (max-width: 1023px) {
     .framework-card {
         width: 150px;
         height: 240px;
     }
 
-    .card-tool:hover .framework-card{
-    transform: rotate(calc(var(--i) * 5deg)) translate(calc(var(--i) * 25px), -25px);
-    /* color: rgba(225,225,225,1); */
-    color: rgba(255, 255, 255, 1);
-    box-shadow: 0 15px 50px rgba(0,0,0,0.25);
-    
+    .card-tool:hover .framework-card {
+        transform: rotate(calc(var(--i) * 5deg)) translate(calc(var(--i) * 25px), -25px);
+        /* color: rgba(225,225,225,1); */
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+
     }
 }
 
 
-@media (min-width: 426px) and (max-width:  768px) {
+@media (min-width: 426px) and (max-width: 768px) {
     .framework-card {
         width: 150px;
         height: 240px;
     }
 
-    .card-tool:hover .framework-card{
-    transform: rotate(calc(var(--i) * 5deg)) translate(calc(var(--i) * 20px), -3px);
-    /* color: rgba(225,225,225,1); */
-    color: rgba(255, 255, 255, 1);
-    box-shadow: 0 15px 50px rgba(0,0,0,0.25);
-    
+    .card-tool:hover .framework-card {
+        transform: rotate(calc(var(--i) * 5deg)) translate(calc(var(--i) * 20px), -3px);
+        /* color: rgba(225,225,225,1); */
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+
     }
 
 
 
 }
 
-@media (max-width:  425px) {
+@media (max-width: 425px) {
     .framework-card {
         width: 100px;
         height: 160px;
     }
 
-    .card-tool:hover .framework-card{
-    transform: rotate(calc(var(--i) * 5deg)) translate(calc(var(--i) * 15px), -5px);
-    /* color: rgba(225,225,225,1); */
-    color: rgba(255, 255, 255, 1);
-    box-shadow: 0 15px 50px rgba(0,0,0,0.25);
-    
+    .card-tool:hover .framework-card {
+        transform: rotate(calc(var(--i) * 5deg)) translate(calc(var(--i) * 15px), -5px);
+        /* color: rgba(225,225,225,1); */
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+
     }
 
 
@@ -125,7 +125,8 @@
     min-height: 550px;
     border-radius: 24px;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, .08);;
+    background-color: rgba(255, 255, 255, .08);
+    ;
     /* justify-content: center; */
     /* align-items: center; */
     position: relative;
@@ -138,7 +139,7 @@
 .div-project-2 {
     position: relative;
     transform-style: preserve-3d;
-    
+
 }
 
 .div-project-2 .box {
@@ -182,14 +183,14 @@
 
 @media(min-width: 1280px) {
     .div-project-2 .box .imgBx img {
-    min-height: 220px;
+        min-height: 220px;
     }
 }
 
-@media (min-width: 1024px) and (max-width:  1280px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
     .div-project-2 .box {
-    position: relative;
-    margin-bottom: 150px;
+        position: relative;
+        margin-bottom: 150px;
     }
 
 
@@ -202,16 +203,16 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: normal;
-        
+
     }
 }
 
-@media (min-width:  769px) and (max-width:  1023px) {
+@media (min-width: 769px) and (max-width: 1023px) {
 
 
     .div-project-2 .box {
-    position: relative;
-    margin-bottom: 150px;
+        position: relative;
+        margin-bottom: 150px;
     }
 
     .div-project-2 .box:hover .contentBx p {
@@ -222,17 +223,17 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: normal;
-        
+
     }
 }
 
-@media (min-width: 426px) and (max-width:  768px) {
+@media (min-width: 426px) and (max-width: 768px) {
 
 
-    
+
     .div-project-2 .box {
-    position: relative;
-    margin-bottom: 150px;
+        position: relative;
+        margin-bottom: 150px;
     }
 
     .div-project-2 .box:hover .contentBx h2 {
@@ -248,43 +249,43 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: normal;
-        
+
     }
 
     .div-project-2 .box .contentBx {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    right: 10px;
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        right: 10px;
 
     }
 
 
 }
 
-@media (max-width:  1279px) {
+@media (max-width: 1279px) {
     .div-project-2 {
         overflow: auto;
-    
+
     }
 
     .div-project-2 .box .imgBx img {
-    min-height: auto;
+        min-height: auto;
     }
 }
 
 
 
-@media (max-width:  425px) {
+@media (max-width: 425px) {
 
     .div-project-2 {
         overflow: auto;
-    
+
     }
 
     .div-project-2 .box {
-    position: relative;
-    margin-bottom: 150px;
+        position: relative;
+        margin-bottom: 150px;
     }
 
     .div-project-2 .box:hover .contentBx h2 {
@@ -300,14 +301,14 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: normal;
-        
+
     }
 
     .div-project-2 .box .contentBx {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    right: 10px;
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        right: 10px;
 
     }
 
